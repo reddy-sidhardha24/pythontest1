@@ -1,0 +1,9 @@
+# ============================================================
+# Refactored Code with Applied Fixes: pythontest1.py
+# ============================================================
+
+# Fix for: ZeroDivisionError in calculate_average (Severity: CRITICAL)
+def calculate_average(numbers):
+    if not numbers:
+        return 0
+    return sum(numbers) / len(numbers)
